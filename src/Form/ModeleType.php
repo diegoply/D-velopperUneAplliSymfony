@@ -2,6 +2,7 @@
 
 namespace App\Form;
 
+use App\Entity\Marque;
 use App\Entity\Modele;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
@@ -22,7 +23,7 @@ class ModeleType extends AbstractType
                 ]
             ])
             ->add('marque', EntityType::class, [
-                'class' => Modele::class,
+                'class' => Marque::class,
                 'choice_label' => 'Libelle',
             ])
             ->add('submit', SubmitType::class)

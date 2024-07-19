@@ -39,6 +39,7 @@ class ModeleController extends AbstractController
         $form->handleRequest($request);
         if($form->isSubmitted() && $form->isValid()){
             $repo->save($modele, true);
+            $this->addFlash('success', 'Le modèle a bien été ajouté.');
             return $this->redirectToRoute('modele_index');
             
         }

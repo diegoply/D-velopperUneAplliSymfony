@@ -1,4 +1,4 @@
-import './bootstrap.js';
+import 'bootstrap.esm.min.js';
 /*
  * Welcome to your app's main JavaScript file!
  *
@@ -9,6 +9,6 @@ import 'bootstrap';
 import '@popperjs/core';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './styles/app.css';
+import './styles/app.css'
 
 console.log('This log comes from assets/app.js - welcome to AssetMapper! 🎉');

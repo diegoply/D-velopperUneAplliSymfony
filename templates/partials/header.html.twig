@@ -10,8 +10,22 @@
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
         <li><a href="{{path('page_contact')}}" class="nav-link px-2 link-secondary">Contact</a></li>
         <li><a href="{{path('page_cgu')}}" class="nav-link px-2">CGU</a></li>
+        <li><div class="dropdown">
+            <a class="nav-link px-2 dropdown-toggle"  href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Menu
+            </a>
 
+            <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="{{path('marque_index')}}">Marques</a></li>
+                    <li><a class="dropdown-item" href="{{path('modele_index')}}">Modèles</a></li>
+                   
+            </ul>
+      </div>
+        </li>
       </ul>
+      
+
+     
 
       <div class="col-md-6 text-end">
         <button type="button" class="btn btn-outline-primary me-2">Connexion</button>
